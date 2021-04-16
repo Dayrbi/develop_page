@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+</head>
+<body>
+  <div class="overlay">
+    <div class="addTaskContainer">
+      <div class="Tasktitle">
+        <h2>Добавьте задачу</h2>
+        <img class="deleteIcon" title="Закрыть">
+      </div>
+      <div class="CreateTaskContainer">
+        <form  class="formTask">
+          <h3>Введите задачу:</h3>
+          <input name="task" type="text" autofocus>
+          <button class="sendButton" name="sendButton" type="submit">Создать</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<div class="div_container">
+  <div data-action="unimportant" show>
+    <h1 data-action="unimportant">Обычные задачи: <img class="AddButton" alt="img is not avalible" title="Добавить задачу"></h1>
+    <ul>
+      
+    </ul>
+  </div>
+  <div data-action="important" show >
+    <h1  data-action="important">Важные задачи: <img class="AddButton" alt="img is not avalible" title="Добавить задачу"></h1>
+    <ul>
+      
+    </ul>
+  </div>
+  <div data-action="veryimportant" show>
+    <h1 data-action="veryimportant">Срочные задачи: <img class="AddButton" alt="img is not avalible" title="Добавить задачу"></h1>
+    <ul>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+  <!-- <div class="buttons-container">
+    <button data-action="create" class="active">Добавить задачу</button>
+    <button data-action="show">Показать список</button>
+    <button data-action="hide" class="active">Скрыть список</button>
+    <div class = "createTask">
+      <form name="formTask">
+        <input name="task" type="text" autofocus>
+        <button class="sendButton" name="sendButton" type="button">Создать</button>
+      </form>
+    </div>
+  </div>
+   
+    <ul>
+      
+    </ul>
+  </div>  -->
+</body>
+</html>

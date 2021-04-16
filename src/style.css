@@ -1,0 +1,163 @@
+body {
+  background-color: lightblue;
+}
+.overlay {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  z-index: 66;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0);
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.addTaskContainer {
+  position: absolute;
+  z-index: 77;
+  height: 210px;
+  width: 440px;
+  top: 20%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  
+}
+.deleteIcon{
+  width: 30px;
+  height: 30px;
+  background-image: url('./icons8-delete-30.png');
+  background-repeat: no-repeat;
+}
+.Tasktitle{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: mediumspringgreen;
+}
+.Tasktitle > h2 {
+  margin-right: 25%;
+}
+.div_container {
+  display: flex;
+  justify-content: space-around;
+}
+.div_container > div {
+  width: 25%;
+  height: min-content;
+  background-color: antiquewhite;
+  border-radius: 30px;
+  overflow: hidden;
+  min-width: 300px;
+}
+.CreateTaskContainer{
+  width: 100%;
+  height: 68%;
+  display: flex;
+  align-items: center;
+}
+.CreateTaskContainer > form > input {
+  width: 250px;
+  height: 25px;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 3px;
+}
+.CreateTaskContainer > form{
+  margin-left: 5%;
+}
+.CreateTaskContainer > form > h3 {
+  margin: 0;
+}
+.AddButton {
+  position: relative;
+  top: 7px;
+}
+div[data-action=unimportant] > h1 {
+  border-bottom: solid 2px green;
+  color: green;
+  text-align: center;
+}
+div[data-action=important] > h1 {
+  border-bottom: solid 2px orange;
+  color: orange;
+  text-align: center;
+}
+div[data-action=veryimportant] > h1 {
+  border-bottom: solid 2px red;
+  color: red;
+  text-align: center;
+}
+
+.sendButton{
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+  min-width: 50px;
+  height: 30px;
+  margin: 0px;
+  opacity: 1;
+  margin-left: 10px;
+  outline: none;
+}
+.sendButton:hover {background-color: #3e8e41}
+  
+.sendButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+.delete {
+  cursor: pointer;
+  margin-left: 5%;
+  position: absolute;
+  right: 5%;
+}
+  
+  .active {
+    opacity: 0.9;
+  }
+  
+  .active:hover {
+    opacity: 1;
+  }
+  
+  div.list-container {
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+  }
+  
+  div.show {
+    height: min-content;
+  }
+  
+  div.hide {
+    height: 35px;
+  }
+  
+  li {
+       
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 6px;
+    font-size: 19px;
+  }
+  li > input {
+    margin-right: 11px;
+  }
+  ul{
+    padding-left: 20px;
+  }
+.hide {
+  display: none;
+  height: min-content;
+}
+  
